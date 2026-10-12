@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html manifest="700.manifest">
+<head>
+<title>شركه الربيع</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        /* وضع الصورة كخلفية مع تغطية الشاشة وتوسيطها */
+        background: linear-gradient(135deg, rgba(10, 20, 40, 0.85), rgba(20, 35, 60, 0.85)), url('ELRABI3 IMAGE-.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Tahoma, Arial, sans-serif;
+        color: #ffffff;
+        text-align: center;
+        min-height: 100vh;
+    }
+
+    /* تنسيق كلمة الشكر بخط صغير في أسفل شمال الصفحة */
+    .special-thanks-bottom-left {
+        position: fixed;
+        bottom: 12px;
+        left: 15px;
+        font-size: 13px; /* خط صغير */
+        color: #ffffff;
+        background: rgba(10, 20, 40, 0.8);
+        padding: 6px 12px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 140, 0, 0.4);
+        direction: ltr;
+        z-index: 9999;
+    }
+
+    .special-thanks-bottom-left a {
+        color: #FF8C00;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    .special-thanks-bottom-left a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="Cache Installed Successfully ✔";setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},1500);}
+window.applicationCache.addEventListener("progress",DLProgress,false);
+window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="Error Installing Cache! - Clear and Re-Open Your Browser ...";};
+</script>
+
+<h1>شركه الربيع</h1>
+<hr>
+<br>
+<h1 id=msgs style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">Starting Cache Installation...</h1>
+
+<!-- العبارة بخط صغير في أسفل شمال الصفحة -->
+<div class="special-thanks-bottom-left">
+    Special Thanks to:<a href="https://twitter.com/_AlAzif">Ziko</a>
+</div>
+
+</body>
+</html>
